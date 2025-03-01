@@ -18,6 +18,10 @@ const nextConfig = {
           protocol: url.protocol.replace(':', ''),
         }
       }),
+      {
+        protocol: 'https',
+        hostname: '*', // Allow images from all domains
+      },
     ],
   },
   reactStrictMode: true,
